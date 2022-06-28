@@ -5,6 +5,7 @@
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},"order":1,},
     {"id":{"name":"_MACROS","path":"scripts/_MACROS/_MACROS.yy",},"order":0,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
+    {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":2,},
     {"id":{"name":"pTile","path":"objects/pTile/pTile.yy",},"order":0,},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":2,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
