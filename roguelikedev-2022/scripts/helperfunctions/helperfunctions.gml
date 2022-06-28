@@ -11,6 +11,17 @@ function MoveOnGrid(_grid_x, _grid_y)
 		_grid_y = 0;
 	}
 	
+	// Tile collisions
+	if (grid_x > 0 && grid_x < GRID_WIDTH-1)
+	{
+		if (!global.game_map[grid_x + _grid_x, grid_y].tile_walkable) _grid_x = 0;
+	}
+	
+	if (grid_y > 0 && grid_y < GRID_HEIGHT-1)
+	{
+		if (!global.game_map[grid_x, grid_y + _grid_y].tile_walkable) _grid_y = 0;
+	}
+	
 	// Commit to movement
 	grid_x += _grid_x;
 	grid_y += _grid_y;
