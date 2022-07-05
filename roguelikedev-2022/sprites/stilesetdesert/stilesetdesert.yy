@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 15,
+  "bbox_left": 16,
+  "bbox_right": 127,
   "bbox_top": 0,
-  "bbox_bottom": 15,
+  "bbox_bottom": 47,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 16,
-  "height": 16,
+  "width": 160,
+  "height": 160,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f1ef0770-7e58-441b-9ce5-1bdcc02e19b1","path":"sprites/sDunes/sDunes.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f1ef0770-7e58-441b-9ce5-1bdcc02e19b1","path":"sprites/sDunes/sDunes.yy",},"LayerId":{"name":"6b573167-443b-4a8e-aa57-bb3d87daf65a","path":"sprites/sDunes/sDunes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sDunes","path":"sprites/sDunes/sDunes.yy",},"resourceVersion":"1.0","name":"f1ef0770-7e58-441b-9ce5-1bdcc02e19b1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f3370e02-f09f-4d53-b6be-40a15d37e493","path":"sprites/sTilesetDesert/sTilesetDesert.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f3370e02-f09f-4d53-b6be-40a15d37e493","path":"sprites/sTilesetDesert/sTilesetDesert.yy",},"LayerId":{"name":"76293c21-1860-4328-967b-64fe0df0d0c9","path":"sprites/sTilesetDesert/sTilesetDesert.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTilesetDesert","path":"sprites/sTilesetDesert/sTilesetDesert.yy",},"resourceVersion":"1.0","name":"f3370e02-f09f-4d53-b6be-40a15d37e493","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sDunes","path":"sprites/sDunes/sDunes.yy",},
+    "spriteId": {"name":"sTilesetDesert","path":"sprites/sTilesetDesert/sTilesetDesert.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b44db889-f1b0-416f-8e14-e26a3e5af7b1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1ef0770-7e58-441b-9ce5-1bdcc02e19b1","path":"sprites/sDunes/sDunes.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"79fd2c3c-db5d-4cb6-8d4f-d086c7315712","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f3370e02-f09f-4d53-b6be-40a15d37e493","path":"sprites/sTilesetDesert/sTilesetDesert.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sDunes","path":"sprites/sDunes/sDunes.yy",},
+    "parent": {"name":"sTilesetDesert","path":"sprites/sTilesetDesert/sTilesetDesert.yy",},
     "resourceVersion": "1.4",
-    "name": "sDunes",
+    "name": "sTilesetDesert",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6b573167-443b-4a8e-aa57-bb3d87daf65a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"76293c21-1860-4328-967b-64fe0df0d0c9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/World/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sDunes",
+  "name": "sTilesetDesert",
   "tags": [],
   "resourceType": "GMSprite",
 }
