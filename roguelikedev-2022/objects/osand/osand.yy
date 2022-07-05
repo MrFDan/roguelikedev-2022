@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sGround",
-    "path": "sprites/sGround/sGround.yy",
+    "name": "sSand",
+    "path": "sprites/sSand/sSand.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,7 +32,7 @@
     "path": "folders/Objects/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oGround",
+  "name": "oSand",
   "tags": [],
   "resourceType": "GMObject",
 }
