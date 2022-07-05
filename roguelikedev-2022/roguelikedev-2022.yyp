@@ -13,6 +13,7 @@
     {"id":{"name":"pTile","path":"objects/pTile/pTile.yy",},"order":0,},
     {"id":{"name":"sTilesetDesert","path":"sprites/sTilesetDesert/sTilesetDesert.yy",},"order":0,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":1,},
+    {"id":{"name":"fDefault","path":"fonts/fDefault/fDefault.yy",},"order":2,},
     {"id":{"name":"HelperFunctions","path":"scripts/HelperFunctions/HelperFunctions.yy",},"order":1,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":1,},
     {"id":{"name":"rm_default","path":"rooms/rm_default/rm_default.yy",},"order":0,},

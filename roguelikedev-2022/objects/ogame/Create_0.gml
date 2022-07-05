@@ -25,6 +25,14 @@ for (var i = 0; i < GRID_WIDTH; i++)
 		with (global.game_map[0, j]) instance_change(oWall, true);
 		with (global.game_map[GRID_WIDTH - 1, j]) instance_change(oWall, true);
 	}
+	
+	// Dunes
+	with (global.game_map[1, 1]) instance_change(oDunes, true);
+	with (global.game_map[2, 1]) instance_change(oDunes, true);
+	with (global.game_map[3, 1]) instance_change(oDunes, true);
+	with (global.game_map[1, 2]) instance_change(oDunes, true);
+	with (global.game_map[2, 2]) instance_change(oDunes, true);
+	with (global.game_map[1, 3]) instance_change(oDunes, true);
 
 #endregion
 
@@ -33,12 +41,13 @@ global.player = instance_create_layer(0, 0, "Instances", oPlayer);
 
 with (global.player)
 {
-	grid_x = 40;
-	grid_y = 25;
+	grid_x = 8;
+	grid_y = 4;
 }
 
 // Initialize game variables
-global.turn = TURN_ORDER.PLAYER;
+global.turn_phase = TURN_ORDER.TURN_START;
+global.turn_count = 0;
 
 // Create the camera
 if (!instance_exists(oCamera))

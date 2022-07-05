@@ -4,7 +4,7 @@
     "path": "sprites/sDunes/sDunes.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -26,7 +26,9 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"tile_travel_cost","path":"objects/pTile/pTile.yy",},"objectId":{"name":"pTile","path":"objects/pTile/pTile.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+  ],
   "parent": {
     "name": "Tiles",
     "path": "folders/Objects/Tiles.yy",
