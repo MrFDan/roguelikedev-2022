@@ -12,6 +12,22 @@ for (var i = 0; i < GRID_WIDTH; i++)
 	}
 }
 
+#region // TEMP
+
+	// Set world boundaries
+	for (var i = 0; i < GRID_WIDTH; i++)
+	{
+		with (global.game_map[i, 0]) instance_change(oWall, true);
+		with (global.game_map[i, GRID_HEIGHT - 1]) instance_change(oWall, true);
+	}
+	for (var j = 1; j < GRID_HEIGHT - 1; j++)
+	{
+		with (global.game_map[0, j]) instance_change(oWall, true);
+		with (global.game_map[GRID_WIDTH - 1, j]) instance_change(oWall, true);
+	}
+
+#endregion
+
 // Initialize the Player
 global.player = instance_create_layer(0, 0, "Instances", oPlayer);
 
