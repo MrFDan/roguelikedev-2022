@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sWall",
-    "path": "sprites/sWall/sWall.yy",
+    "name": "sDunes",
+    "path": "sprites/sDunes/sDunes.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,15 +26,13 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"tile_walkable","path":"objects/pTile/pTile.yy",},"objectId":{"name":"pTile","path":"objects/pTile/pTile.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Tiles",
     "path": "folders/Objects/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "oDunes",
   "tags": [],
   "resourceType": "GMObject",
 }
