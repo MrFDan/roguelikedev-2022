@@ -1,17 +1,11 @@
 {
-  "spriteId": {
-    "name": "pFloor",
-    "path": "sprites/pFloor/pFloor.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "pTile",
-    "path": "objects/pTile/pTile.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,15 +18,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Objects/Tiles.yy",
+    "name": "Entities",
+    "path": "folders/Objects/Entities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oFloor",
+  "name": "par_entity",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -25,7 +25,7 @@
   "properties": [
     {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"tile_walkable","tags":[],"resourceType":"GMObjectProperty",},
     {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"tile_transparent","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"tile_dark","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"tile_dark","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
@@ -33,7 +33,7 @@
     "path": "folders/Objects/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "pTile",
+  "name": "par_tile",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sWall",
-    "path": "sprites/sWall/sWall.yy",
+    "name": "spr_npc",
+    "path": "sprites/spr_npc/spr_npc.yy",
   },
   "solid": false,
   "visible": true,
@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "pTile",
-    "path": "objects/pTile/pTile.yy",
+    "name": "par_entity",
+    "path": "objects/par_entity/par_entity.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,15 +26,13 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [],
-  "overriddenProperties": [
-    {"propertyId":{"name":"tile_walkable","path":"objects/pTile/pTile.yy",},"objectId":{"name":"pTile","path":"objects/pTile/pTile.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "Tiles",
-    "path": "folders/Objects/Tiles.yy",
+    "name": "Entities",
+    "path": "folders/Objects/Entities.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "obj_npc",
   "tags": [],
   "resourceType": "GMObject",
 }

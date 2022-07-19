@@ -1,17 +1,11 @@
 {
-  "spriteId": {
-    "name": "sNPC",
-    "path": "sprites/sNPC/sNPC.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "pEntity",
-    "path": "objects/pEntity/pEntity.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,15 +18,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ProceduralGeneration",
+    "path": "folders/Objects/ProceduralGeneration.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oNPC",
+  "name": "obj_rectangular_room",
   "tags": [],
   "resourceType": "GMObject",
 }

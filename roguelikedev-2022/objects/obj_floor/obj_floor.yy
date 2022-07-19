@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPlayer",
-    "path": "sprites/sPlayer/sPlayer.yy",
+    "name": "spr_floor",
+    "path": "sprites/spr_floor/spr_floor.yy",
   },
   "solid": false,
   "visible": true,
@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "pEntity",
-    "path": "objects/pEntity/pEntity.yy",
+    "name": "par_tile",
+    "path": "objects/par_tile/par_tile.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,11 +28,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Tiles",
+    "path": "folders/Objects/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPlayer",
+  "name": "obj_floor",
   "tags": [],
   "resourceType": "GMObject",
 }
