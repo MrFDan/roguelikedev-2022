@@ -41,6 +41,7 @@ function make_map(_max_rooms, _room_min_size, _room_max_size, _map_width, _map_h
 				// This is the first room, where the player starts at
 				// Create player
 				global.player = instance_create_layer(0, 0, "Entities", obj_player);
+				array_push(global.entities, global.player);
 
 				with (global.player)
 				{
@@ -66,6 +67,8 @@ function make_map(_max_rooms, _room_min_size, _room_max_size, _map_width, _map_h
 					create_v_tunnel(_prev_room.center_grid_y, center_grid_y, _prev_room.center_grid_x);
 					create_h_tunnel(_prev_room.center_grid_x, center_grid_x, center_grid_y);
 				}
+				
+				place_entities(_new_room);
 			}
 			array_push(global.rooms, _new_room);
 			global.num_rooms++;
@@ -119,6 +122,47 @@ function create_floor()
 		for (var j = grid_y1 + 1; j < grid_y2; j++)
 		{
 			with (global.game_map[i, j]) instance_change(obj_floor, true);
+		}
+	}
+}
+
+function place_entities(_room)
+{
+	// Get a random number of monsters
+	number_of_monsters = irandom_range(0, MAX_MONSTERS_PER_ROOM);
+	for (var i = 0; i < number_of_monsters; i++)
+	{
+		// Choose a random location in the room
+		var _grid_x = irandom_range(_room.grid_x1 + 1, _room.grid_x2 - 1);
+		var _grid_y = irandom_range(_room.grid_y1 + 1, _room.grid_y2 - 1);
+		var _monster = instance_create_layer(_grid_x * TILE_SIZE, _grid_y * TILE_SIZE, "Entities", obj_monster);
+		
+		for (var m = 0; m < array_length_1d(global.entities); m++)
+		{
+			if (_grid_x == global.entities[m].grid_x and _grid_y == global.entities[m].grid_y)
+			{
+				instance_destroy(_monster);
+				break; // There already is another entity on that position
+			}
+			else
+			{
+				if (irandom_range(0, 100) < 80)
+				{
+					_monster.sprite_index = spr_orc;
+				}
+				else
+				{
+					_monster.sprite_index = spr_troll;
+				}
+				
+				with (_monster)
+				{
+					grid_x = _grid_x;
+					grid_y = _grid_y;
+				}
+				
+				//array_push(global.entities, _monster.id);
+			}
 		}
 	}
 }

@@ -29,11 +29,9 @@ function move_on_grid(_grid_x, _grid_y)
 	grid_x += _grid_x;
 	grid_y += _grid_y;
 	
-	// Reset the darkness for the FOV to work
-	with (par_tile)
-	{
-		tile_dark = true;
-	}
+	// Reset FOV
+	with (par_tile) tile_dark = true;
+	with (par_entity) entity_visible = false;
 }
 
 function update_position_on_grid()
