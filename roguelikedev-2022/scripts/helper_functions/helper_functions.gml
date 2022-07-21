@@ -24,8 +24,16 @@ function move_on_grid(_grid_x, _grid_y)
 	}
 		
 	// Commit to movement
+	previous_grid_x = grid_x;
+	previous_grid_y = grid_y;
 	grid_x += _grid_x;
 	grid_y += _grid_y;
+	
+	// Reset the darkness for the FOV to work
+	with (par_tile)
+	{
+		tile_dark = true;
+	}
 }
 
 function update_position_on_grid()
