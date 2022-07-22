@@ -23,9 +23,9 @@ switch (global.game_state)
 	case GAME_STATE.ENEMY_TURN:
 		for (var m = 0; m < array_length_1d(global.entities); m++)
 		{
-			if (m != global.player)
+			if (m != global.player && global.entities[m].entity_turn_script != -1)
 			{
-				show_debug_message("The " + global.entities[m].entity_name + " ponders the meaning of its existence.");
+				with (global.entities[m]) script_execute(entity_turn_script);
 			}
 		}
 	

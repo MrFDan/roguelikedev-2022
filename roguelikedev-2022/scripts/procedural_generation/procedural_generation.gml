@@ -136,7 +136,7 @@ function place_entities(_room)
 		// Choose a random location in the room
 		var _grid_x = irandom_range(_room.grid_x1 + 1, _room.grid_x2 - 1);
 		var _grid_y = irandom_range(_room.grid_y1 + 1, _room.grid_y2 - 1);
-		var _monster = instance_create_layer(_grid_x * TILE_SIZE, _grid_y * TILE_SIZE, "Entities", obj_monster);
+		var _monster = instance_create_layer(_grid_x * TILE_SIZE, _grid_y * TILE_SIZE, "Entities", par_entity);
 		
 		for (var m = 0; m < array_length_1d(global.entities); m++)
 		{
@@ -149,19 +149,11 @@ function place_entities(_room)
 			{
 				if (irandom_range(0, 100) < 80)
 				{
-					with (_monster)
-					{
-						sprite_index = spr_orc;
-						entity_name = "orc";
-					}
+					with (_monster) instance_change(obj_orc, true);
 				}
 				else
 				{
-					with (_monster)
-					{
-						sprite_index = spr_troll;
-						entity_name = "troll";
-					}
+					with (_monster) instance_change(obj_troll, true);
 				}
 				
 				with (_monster)

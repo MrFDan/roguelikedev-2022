@@ -30,6 +30,9 @@
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"entity_visible","path":"objects/par_entity/par_entity.yy",},"objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"entity_max_hp","path":"objects/par_entity/par_entity.yy",},"objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"value":"30","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"entity_defense","path":"objects/par_entity/par_entity.yy",},"objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"entity_power","path":"objects/par_entity/par_entity.yy",},"objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Entities",
