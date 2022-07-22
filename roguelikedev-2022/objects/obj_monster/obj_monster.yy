@@ -22,10 +22,10 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [],
-  "properties": [
-    {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"variable_name","tags":[],"resourceType":"GMObjectProperty",},
+  "properties": [],
+  "overriddenProperties": [
+    {"propertyId":{"name":"entity_blocks","path":"objects/par_entity/par_entity.yy",},"objectId":{"name":"par_entity","path":"objects/par_entity/par_entity.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
-  "overriddenProperties": [],
   "parent": {
     "name": "Entities",
     "path": "folders/Objects/Entities.yy",

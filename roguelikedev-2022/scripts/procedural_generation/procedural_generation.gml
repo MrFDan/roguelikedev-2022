@@ -70,6 +70,7 @@ function make_map(_max_rooms, _room_min_size, _room_max_size, _map_width, _map_h
 				
 				place_entities(_new_room);
 			}
+
 			array_push(global.rooms, _new_room);
 			global.num_rooms++;
 		}
@@ -148,11 +149,19 @@ function place_entities(_room)
 			{
 				if (irandom_range(0, 100) < 80)
 				{
-					_monster.sprite_index = spr_orc;
+					with (_monster)
+					{
+						sprite_index = spr_orc;
+						entity_name = "orc";
+					}
 				}
 				else
 				{
-					_monster.sprite_index = spr_troll;
+					with (_monster)
+					{
+						sprite_index = spr_troll;
+						entity_name = "troll";
+					}
 				}
 				
 				with (_monster)
@@ -160,9 +169,9 @@ function place_entities(_room)
 					grid_x = _grid_x;
 					grid_y = _grid_y;
 				}
-				
-				//array_push(global.entities, _monster.id);
 			}
 		}
+		
+		array_push(global.entities, _monster);
 	}
 }
