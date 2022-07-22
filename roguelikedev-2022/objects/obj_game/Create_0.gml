@@ -7,6 +7,7 @@ enum GAME_STATE
 randomize();
 
 global.game_state = GAME_STATE.PLAYERS_TURN
+global.debug_mode = false;
 
 // Dungeon generation
 global.entities = []; // Array to store all actors in the game

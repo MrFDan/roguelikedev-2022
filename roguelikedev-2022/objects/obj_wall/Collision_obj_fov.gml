@@ -1,0 +1,1 @@
+tile_explored = true;
