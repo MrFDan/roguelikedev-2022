@@ -17,17 +17,14 @@ function make_map(_max_rooms, _room_min_size, _room_max_size, _map_width, _map_h
 		{
 			var _tile = global.game_map[i, j];
 			
-			// Add left neighbor
-			if (i > 0) ds_list_add(_tile.neighbors, global.game_map[i - 1, j]);
-			
-			// Add right neighbor
-			if (i < GRID_WIDTH - 1) ds_list_add(_tile.neighbors, global.game_map[i + 1, j]);
-			
-			// Add top neighbor
-			if (j > 0) ds_list_add(_tile.neighbors, global.game_map[i, j - 1]);
-			
-			// Add bottom neighbor
-			if (j < GRID_HEIGHT - 1) ds_list_add(_tile.neighbors, global.game_map[i, j + 1]);
+			if (i > 0) ds_list_add(_tile.neighbors, global.game_map[i - 1, j]); // Add left neighbor
+			if (i < GRID_WIDTH - 1) ds_list_add(_tile.neighbors, global.game_map[i + 1, j]); // Add right neighbor
+			if (j > 0) ds_list_add(_tile.neighbors, global.game_map[i, j - 1]); // Add top neighbor
+			if (j < GRID_HEIGHT - 1) ds_list_add(_tile.neighbors, global.game_map[i, j + 1]); // Add bottom neighbor
+			if (i > 0 and j > 0) ds_list_add(_tile.neighbors, global.game_map[i - 1, j - 1]); // Add top left neighbor
+			if (i < GRID_WIDTH - 1 and j > 0) ds_list_add(_tile.neighbors, global.game_map[i + 1, j - 1]); // Add top right neighbor
+			if (i > 0 and j < GRID_HEIGHT - 1) ds_list_add(_tile.neighbors, global.game_map[i - 1, j + 1]); // Add bottom left neighbor
+			if (i < GRID_WIDTH - 1 and j < GRID_HEIGHT - 1) ds_list_add(_tile.neighbors, global.game_map[i + 1, j + 1]); // Add bottom right neighbor
 		}
 	}
 	
