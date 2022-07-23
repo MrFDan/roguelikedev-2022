@@ -1,5 +1,5 @@
-// Floors
-if (!collision_line(other.x, other.y, global.player.x+5, global.player.y+5, obj_wall, false, true))
+if (!collision_line(other.x, other.y, global.player.x, global.player.y, obj_wall, false, false))
 {
 	other.tile_dark = false;
+	other.tile_explored = true;
 }
