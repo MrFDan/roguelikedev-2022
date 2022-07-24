@@ -6,7 +6,12 @@ function make_map(_max_rooms, _room_min_size, _room_max_size, _map_width, _map_h
 		for (var j = 0; j < GRID_HEIGHT; j++)
 		{
 			global.game_map[i, j] = instance_create_layer(i*TILE_SIZE, j*TILE_SIZE, "Tiles", obj_wall);
-			with (global.game_map[i, j]) neighbors = ds_list_create();
+			with (global.game_map[i, j])
+			{
+				neighbors = ds_list_create();
+				grid_x = i;
+				grid_y = j;
+			}
 		}
 	}
 	
