@@ -3,7 +3,7 @@ function reset_tiles()
 	with (par_tile)
 	{
 		tile_dark = true;
-		tile_occupant = noone;
+		//tile_occupant = noone;
 		tile_color = c_white;
 		tile_parent = noone;
 		tile_g_score = 0;
